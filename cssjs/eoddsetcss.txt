@@ -1,0 +1,244 @@
+
+
+
+@font-face {
+    font-family: 'impact';
+    font-style: normal;
+    font-weight: 400;
+    src:url(../impact-italic-webfont.woff) format('woff2');;
+  }
+
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'impact';
+ 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.eodds-feed-wrap{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width:   var(--bwidth);
+    height:  var(--bheight);
+    background: url(../img/bg.jpg) no-repeat; 
+     mix-blend-mode: lighten;
+    isolation: isolate; 
+}
+
+
+
+.eodds-feed-wrap::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: url(../img/bg.jpg) no-repeat; 
+	opacity: 1;
+  mix-blend-mode: lighten;
+  isolation: isolate;
+}
+
+
+
+
+.textwrap{
+    position: relative;
+    display: block;
+    text-align: center;
+  /*  text-shadow: 8px 8px rgba(0, 0, 0, 0.5);*/
+  z-index: 2;
+}
+
+ .headline{
+     position: absolute;
+     top:60px;   
+     width:100%;
+     text-align: center;
+ }
+.top{
+   
+
+
+}
+
+.headline>.bottom{
+    -webkit-clip-path: inset(58% 0 0 0);
+    clip-path: inset(58% 0 0 0);
+}
+/*
+.redShadow {  text-shadow:-3px 3px 2px rgb(255, 0, 0);}
+.greenShadow {  text-shadow:2px -3px 2px rgb(12, 211, 22);}
+.blueShadow {  text-shadow:3px 1px 2px rgb(12, 48, 211);}
+*/
+
+.h1class{
+    color:#fff;
+    font-style: italic;
+    font-size: 70px;
+    display: block
+}
+
+.hed1{
+    position: absolute;
+    top:10px;
+    width:100%;
+    text-shadow:2px -1px 0px rgb(12, 211, 22);
+    z-index: 1;
+   
+}
+
+.hed2{
+    position: absolute;
+    top:90px;
+    width:100%;
+}
+
+.hed3{
+    position: absolute;
+    top:170px;
+    width:100%;
+}
+
+
+
+
+
+.oddds{
+    position: absolute;
+    top:350px;
+    left: 130px;
+    display: inline-block;
+    color:#fff;
+    font-style: italic;
+    width:calc(100% - 30%);
+    text-align: center;
+
+    
+}
+
+
+
+.oddds > div{
+   font-size: 70px;
+   position: relative;
+   float:left;
+   margin-left: calc(30px * 3);
+
+}
+
+.oddds > div >span{
+    position: relative;
+    display: inline-block;
+    color:#dc5f11;
+    font-size: 35px;
+    margin-right: 10px;
+
+ }
+
+
+
+
+
+
+.glitch {
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+      transform: scale3d(1, 1, 1);
+      text-shadow: 2px 1px blue;
+      /*clip: rect(0px, 930px, 95px, 0);*/
+  }
+  
+  
+  .glitch::before {
+    left: 7px;
+      content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+z-index: 1;
+    color: #fff;
+      clip: rect(38px, 1000px, 96px, 0);
+    text-shadow: 2px 0 #008000;
+  }
+  .glitch::after {
+    left: -3px;
+      content: attr(data-text);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+
+    color: #fff;
+      clip: rect(30px, -900px, 50px, 0);
+    text-shadow: -1px 0 rgb(255, 0, 0)
+  }
+
+
+
+
+.ctawrap{
+    display: block;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 80%;
+    
+     z-index: 100;
+}
+
+
+.cta{
+background:rgba(0, 61, 153, 0.3);
+color: #fff;
+display: inline-block;
+position: relative;
+font-size: 1.7em;
+border: 1px rgba(0, 61, 153, 0.7) solid;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+padding: 12px;
+padding-left: 30px;
+padding-right: 30px;
+cursor: pointer;
+}
+
+.logo{
+  display:block;
+  width:100px;  
+  height:100px;
+  position: absolute;
+  background:url(../img/logo.png) no-repeat; 
+  background-size:cover;
+  bottom:30px;
+  left:calc(100% - 110px);
+  text-align: left;
+}
+
+.logo::after
+{
+	content: 'Udbydes af Danske Licens Spil A/S';
+	position: absolute;
+	bottom: -110px;
+	left: -60px;;
+	width: 350px;
+  height: 100%;
+  color:#ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6em;
+
+}

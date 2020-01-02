@@ -1,0 +1,16 @@
+{
+  "name": "makebanner",
+  "version": "0.0.0",
+  "description": "html banner starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "krilleandersen@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "commandir": "^1.0.1",
+    "fs-extra": "^7.0.0",
+    "mkdir-recursive": "^0.4.0"
+  }
+}
